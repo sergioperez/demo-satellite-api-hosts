@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .hostData {
+      margin-bottom: 40pt
+    }
+  </style>
+</head>
+<body>
+  <% hosts.forEach((host) => { %>
+    <div class="hostData">
+      <p>
+        Mac Address:
+        <%= host.mac %>
+      </p>
+      <p>
+        Name:
+        <%= host.name %>
+      </p>
+      <p>
+        IP:
+        <%= host.ip %>
+      </p>
+      <p>
+        Last report:
+        <%= host.last_report %>
+      </p>
+      <p>
+        OS ID:
+        <%= host.operatingsystem_name %>
+      </p>
+      <p>
+        Organization:
+        <%= host.organization_name %>
+      </p>
+      <p>
+        Location Name:
+        <%= host.location_name %>
+      </p>
+    </div>
+  <% }) %>
+
+</body>
+</html>
