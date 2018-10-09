@@ -4,7 +4,9 @@ import express from 'express'
 const app = express()
 app.set('view engine', 'ejs')
 
+// https://urlofsatellite.domain
 const SATELLITE_URL=process.argv[2]
+// base64(username:password)
 const CREDENTIALS=process.argv[3]
 
 // Ignore the self-signed certificate

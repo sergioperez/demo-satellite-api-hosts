@@ -11,4 +11,4 @@ USERNAME=$2
 PASSWORD=$3
 CREDENTIALS=$(echo -n "${USERNAME}:${PASSWORD}" | base64)
 
-node --experimental-modules index.mjs $SATELLITE_URL $CREDENTIALS
+nodemon --experimental-modules index.mjs $SATELLITE_URL $CREDENTIALS
